@@ -2,7 +2,7 @@
   "name": "projeto-azulismo",
   "version": "1.0.0",
   "description": "Backend Projeto-Azulismo: Ensino de Pensamento Computacional para Crianças com TEA",
-  "main": "src/app.js",
+  "main": "system/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
