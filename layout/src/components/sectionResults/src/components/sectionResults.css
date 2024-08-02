@@ -1,0 +1,33 @@
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  max-width: 500px;  
+}
+.container h2{
+  font-weight: 800;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.container ul li{
+font-weight: 500;
+font-size: 24px;
+line-height: 2;
+}
+li .check{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4682B4;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-right: 6px;
+  
+}
