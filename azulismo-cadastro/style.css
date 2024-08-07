@@ -1,0 +1,139 @@
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Garante que o conteúdo comece do topo */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    position: relative; /* Necessário para posicionar logos nas quinas */
+}
+
+/* Contêiner para logos nas quinas */
+.logo-corner {
+    position: absolute;
+    width: 170px; /* Tamanho das logos */
+    height: 200px;
+}
+
+/* Posicionamento das logos */
+.logo-top-left {
+    top: 0;
+    left: 0;
+}
+
+.logo-top-right {
+    top: 0;
+    right: 0;
+}
+
+.logo-bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.logo-bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+/* Contêiner centralizado */
+.container {
+    background-color: #ffffff; /* Cor de fundo sólida */
+    padding: 20px; /* Espaço interno */
+    box-shadow: 0 0 10px rgba(243, 240, 240, 0.1); /* Sombra para destaque */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+    max-width: 800px; /* Largura máxima do conteúdo */
+    width: 100%; /* Largura total */
+    margin: 20px auto; /* Centraliza o contêiner horizontalmente */
+}
+
+/* Estilo do logo */
+.logo-container {
+    margin-top: 10px; /* Espaço para a logo no topo */
+}
+
+.logo {
+    width: 70%; /* Aumenta a largura da logo */
+    height: auto;
+    margin-bottom: 0px; /* Reduz o espaço abaixo da logo */
+}
+
+/* Estilo do título */
+h2 {
+    color: #333;
+    margin: 0; /* Remove o espaço acima e abaixo do título */
+    padding-top: 0; /* Remove o padding superior */
+    margin-top: -150px; /* Ajusta a margem superior para manter o título no mesmo lugar */
+}
+
+/* Estilo do formulário */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 10px; /* Reduz o espaço entre as caixas */
+    margin-top: 10px; /* Espaço acima da form-container */
+}
+
+/* Estilo das caixas de formulário */
+.box {
+    width: 480px; 
+    padding: 10px; /* Reduz o padding das caixas */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box; 
+    margin-top: 0; /* Remove a margem superior */
+}
+
+/* Estilo da caixa azul */
+.azul {
+    background-color: #1068B2; 
+    color: white;
+    min-height: 400px; /* Opcional: reduzir a altura mínima se necessário */
+}
+
+/* Estilo da caixa branca */
+.branco {
+    background-color: white;
+    min-height: 400px; /* Opcional: reduzir a altura mínima se necessário */
+}
+
+/* Estilo dos rótulos */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: inherit; 
+}
+
+/* Estilo dos campos de entrada */
+input {
+    width: calc(100% - 20px); 
+    padding: 8px; /* Reduz o padding dos campos de entrada */
+    margin-bottom: 10px; /* Reduz o espaço entre os campos de entrada */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    color: #333;
+}
+
+/* Estilo dos placeholders */
+input::placeholder {
+    color: #666; 
+}
+
+/* Estilo dos botões */
+button {
+    width: 100%; 
+    background-color: #1068B2; 
+    color: white;
+    padding: 10px 0; /* Reduz a altura do botão */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px; /* Adiciona um pequeno espaço acima do botão */
+}

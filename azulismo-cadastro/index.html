@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro - Azulismo</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+    <img src="img/background.png" alt="Logo" class="logo-corner logo-top-left">
+    <img src="img/background.png" alt="Logo" class="logo-corner logo-top-right">
+    <img src="img/background.png" alt="Logo" class="logo-corner logo-bottom-left">
+    <img src="img/background.png" alt="Logo" class="logo-corner logo-bottom-right">
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="img/Azulismo colorido.png" alt="LOGO AZULISMO" class="logo">
+        </div>
+
+        <h2>Realize o cadastro e comece a aprender!</h2>
+
+        <div class="form-container">
+            <div class="box azul">
+                <h3>Dados do Responsável</h3>
+                <form id="responsavelForm">
+                    <label for="nomeResponsavel">Nome do Responsável:</label>
+                    <input type="text" id="nomeResponsavel" name="nomeResponsavel" placeholder="Nome do Responsável" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+
+                    <label for="emailResponsavel">Email do Responsável:</label>
+                    <input type="email" id="emailResponsavel" name="emailResponsavel" placeholder="Email do Responsável" required>
+
+                    <label for="confirmaEmail">Confirmação de Email:</label>
+                    <input type="email" id="confirmaEmail" name="confirmaEmail" placeholder="Confirmação de Email" required>
+                </form>
+            </div>
+
+            <div class="box branco">
+                <h3>Dados do Usuário (Criança)</h3>
+                <form id="usuarioForm">
+                    <label for="nomeUsuario">Nome do Usuário:</label>
+                    <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Nome do Usuário" required>
+
+                    <label for="dataNascimento">Data de Nascimento do Usuário:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" placeholder="Data de Nascimento do Usuário" required>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required>
+
+                    <label for="confirmaSenha">Confirmação de Senha:</label>
+                    <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Confirmação de Senha" required>
+
+                    <a href="link-desejado.html" class="button-link"><button type="button">Cadastrar</button></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
