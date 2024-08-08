@@ -12,15 +12,12 @@ const userRoutes = require('./routes/userRoute');
 
 app.use('/api/users', userRoutes);
 
+app.use(express.static(path.join(__dirname, '../layout/build')));
 
-// Servir arquivos estáticos do frontend em produção
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../frontend/build')));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../layout/build', 'index.html'));
+});
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
-  });
-}
 
 // Porta do servidor
 const PORT = process.env.PORT || 5000;
