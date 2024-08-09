@@ -15,3 +15,12 @@ Wandeson Rodrigues Cardoso - wandesonrc@gmail.com
 Richele Da Costa Praxedes - praxedesrichele@gmail.com
 Rilda Rosiene Albuquerque - rildarosianealbuquerquecabral@gmail.com
 Marcio Leandro Cristovam Azevedo de Holanda - marcioh.dev@gmail.com
+
+
+Instruções para rodar o app:
+
+Back-end: navegue até o diretorio system e rode o comando: node app.js;
+
+Front-end: navegue até o diretorio layout e rode o comando npm run build e em seguida o comando serve -s build.
+
+A pagina será servida na porta 5000.

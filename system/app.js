@@ -10,7 +10,7 @@ app.use(express.json());
 // Rotas da API
 const userRoutes = require('./routes/userRoute');
 
-app.use('/api/users', userRoutes);
+app.use('/', userRoutes);
 
 app.use(express.static(path.join(__dirname, '../layout/build')));
 
