@@ -1,6 +1,6 @@
-Site de Ensino de Pensamento Computacional para Crianças com TEA
+Site de Ensino de Pensamento Computacional para Crianças com TEA.
 
-Equipe:
+EQUIPE:
 Front-End
 
 Lucas Ferreira Correia da Silva - lucas.lfcds@gmail.com
@@ -13,14 +13,12 @@ Back-End
 José Carlos Goncalves Soares Junior - cjpro.social@gmail.com
 Wandeson Rodrigues Cardoso - wandesonrc@gmail.com
 Richele Da Costa Praxedes - praxedesrichele@gmail.com
-Rilda Rosiene Albuquerque - rildarosianealbuquerquecabral@gmail.com
 Marcio Leandro Cristovam Azevedo de Holanda - marcioh.dev@gmail.com
 
+INSTRUÇÕES PARA RODAR A APLICAÇÃO:
 
-Instruções para rodar o app:
+Back-end: navegue até o diretorio system e rode o comando:npm update, e depois o comando: node app.js; (É necessario ter o node instalado!)
 
-Back-end: navegue até o diretorio system e rode o comando: node app.js;
-
-Front-end: navegue até o diretorio layout e rode o comando npm run build e em seguida o comando serve -s build.
+Front-end: navegue até o diretorio layout e rode o comando:npm upadte, depois: npm run build e em seguida o comando serve -s build.
 
 A pagina será servida na porta 5000.
