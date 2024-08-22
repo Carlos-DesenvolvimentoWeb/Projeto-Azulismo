@@ -10,9 +10,9 @@ const Intro = () => (
             </p>
             <button class="buttonIntro1">Comece a aprender</button>
         </div>
-        <div class="image-container">
+        {/* <div class="image-container">
             <img href='../assets/img/layout.jpeg' alt='Quebra Cabeça' />
-        </div>
+        </div> */}
     </div>
 );
 
