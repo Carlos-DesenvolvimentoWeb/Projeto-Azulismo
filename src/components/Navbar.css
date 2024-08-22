@@ -7,13 +7,13 @@ nav {
     background-color: #FFFF;
     padding: 16px 80px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
-    height: 60px; /* Ajuste a altura conforme necessário */
+    height: 60px; 
   }
   
   .header-image img {
-    height: 60px; /* Faz com que a imagem ocupe a altura total do contêiner */
-    width: auto; /* Mantém a proporção da imagem */
-    display: block; /* Remove qualquer espaço abaixo da imagem */
+    height: 60px; 
+    width: auto; 
+    display: block; 
   }
   
   h1 {
