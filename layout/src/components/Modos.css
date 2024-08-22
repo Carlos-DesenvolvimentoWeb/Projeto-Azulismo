@@ -1,0 +1,65 @@
+.modos-de-aprender {
+  background-color: #F0F0F0;
+  font-family: 'Nunito', sans-serif;
+  color: #0A033C;
+  padding: 15px 0 25px 0;
+}
+
+
+#aprender {
+  
+    display: flex;              
+    list-style-type: none;      
+    padding: 20px;                 
+    margin: 0px;                  
+    justify-content: center;  
+    align-items: center;      
+}
+
+  
+  #aprender li {
+    font-weight: bold;
+    margin: 0 10px;            
+    padding: 20px 40px 20px 75px;     
+    border: 2px solid white;   
+    border-radius: 10px;      
+    background-color: white;   
+    color: #0A033C;     
+    position: relative;
+    margin-right: 15px;
+    transition: 0.3s ease-in-out;          
+  }
+  
+  #aprender li:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  #aprender .quadrado::before {
+    content: ""; 
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 30%; 
+    position: absolute;
+    left: 18px; 
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+#video.quadrado::before {
+  background-color: #4682B4; 
+}
+
+#literatura.quadrado::before {
+  background-color: #31BEA5; 
+}
+
+#games.quadrado::before {
+  background-color: #89CFF0; 
+}
+
+#exercicios.quadrado::before {
+  background-color: #2F4F4F; 
+}
+  
