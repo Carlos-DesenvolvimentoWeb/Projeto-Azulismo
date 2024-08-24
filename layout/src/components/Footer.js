@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <img src="" alt="Azulismo Logo" className="footer-logo" />
+        <img src="../images/Puzzle.png" alt="Azulismo Logo" className="footer-logo" />
         <p className="footer-copyright">©2024 azulismo.com</p>
       </div>
     </footer>
