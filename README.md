@@ -6,7 +6,6 @@ Front-End
 Lucas Ferreira Correia da Silva - lucas.lfcds@gmail.com
 Maria Clara Santos Oliveira - clara.santoss.oliveira@gmail.com
 Mariene Silva da Cruz Santos - ⁠maricruzdev@gmail.com
-João Paulo Dias Ferreira - paulo_diasfe@hotmail.com
 
 Back-End
 
