@@ -1,33 +1,19 @@
-const express = require('express');
-const router = express.Router();
-const passport = require('passport');
-const userController = require('../controllers/userController');
-
-// Rotas de cadastro e login
-//http://localhost:5000/api/register
-router.post('/register', userController.register);
+const express = require('express')
+const router = express.Router()
+const passport = require('passport')
 
 
-//http://localhost:5000/api/login
-router.post('/login', userController.login);
+router.post('/login', (req, res, next) =>{
+    try{
 
-// Rota para logout
-router.get('/logout', userController.logout);
+    }catch(err){
+        console.log('Erro: ', err);
+    }
 
-// Rota para autenticação via Google
-router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
-
-router.get('/auth/google/callback', passport.authenticate('google', { session: false }), (req, res) => {
-    const token = req.user.token;
-    res.json({ token });
-});
-
-// Rota para autenticação via Facebook
-router.get('/auth/facebook', passport.authenticate('facebook', { scope: ['email'] }));
-
-router.get('/auth/facebook/callback', passport.authenticate('facebook', { session: false }), (req, res) => {
-    const token = req.user.token;
-    res.json({ token });
-});
+})
+//Logout
+router.get('/logout', (req, res, next) =>{
+    res.redirect('/homepage');
+})
 
 module.exports = router;
