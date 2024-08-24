@@ -1,0 +1,39 @@
+.dep h2 {
+  text-align: center;
+  margin-block: 30px;
+}
+
+
+ .card-item {
+  color: black;
+  background: #fff;
+  backdrop-filter: blur(30px);
+  user-select: none;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 200px;
+  
+}
+
+ .card-item .depoiment {
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: 500;
+}
+
+.dep {
+  /* background-color: #89cff0; */
+  background-image: url(../assets/img/bg.png);
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.cards-depoiment {
+  margin-inline: 10px;
+  max-width: 300px;
+}
+/* .carousel-container {
+ 
+} */
