@@ -1,7 +1,7 @@
 const passport = require('passport');
 const User = require('../models/userModel');
 const jwt = require('jsonwebtoken');
-const userRepository = require("../repositorys/userRepository")
+const userRepository = require("../repository/userRepository")
 
 module.exports = {
     // login: async (req, res) => {
