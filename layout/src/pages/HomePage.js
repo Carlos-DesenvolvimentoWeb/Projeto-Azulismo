@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import FilterBar from '../components/FilterBar';
+// import FilterBar from '../components/FilterBar';
 // import CourseSection from '../components/CourseSection';
 import Footer from '../components/Footer';
 import Intro from '../components/Intro';  
@@ -14,7 +14,7 @@ function HomePage() {
   return (
     <div className="App">
        <Navbar />
-       <FilterBar />
+       {/* <FilterBar /> */}
        <Intro />
        <Modos />
        {/* <CourseSection title="Front-End" />

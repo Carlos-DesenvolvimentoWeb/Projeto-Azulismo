@@ -30,19 +30,19 @@ body, html {
 
 #navbar {
     display: flex;
-    justify-content: center;
-    position: fixed;
+    position: sticky;
     top: 36px;
-    right: 30px;
     width: 100%;
     margin: 0;
+    margin-left: 20px;
 }
 
 #navbar li {
     list-style: none;
-    padding: 0 30px;
-    position: relative;
+    padding: 0px 110px 0px 0px;
+    text-align: center;
 }
+
 
 #navbar li a {
     text-decoration: none;
@@ -59,7 +59,7 @@ body, html {
     color: #016AFA;
 }
 
-.container {
+.logar {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -108,5 +108,3 @@ body, html {
 .dropdown.clicked {
     fill: #4682B4;
 }
-
-

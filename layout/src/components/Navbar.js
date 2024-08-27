@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import "./Navbar.css";
 import LogoAlternativa from '../images/LogoAlternativa.png';
-import { Link } from 'react-router-dom';
-
 
 function Navbar() {
 
@@ -53,9 +51,9 @@ function Navbar() {
                         <li><a href="index.html">Sobre o Projeto</a></li>
                     </ul>
                 </div>
-                <div className="container">
-                    <div id="registre"><li><Link to="/cadastro">Registre-se</Link></li></div>
-                    <div id="login"><Link to="/login">Log In</Link></div>
+                <div className="logar">
+                    <div id="registre"><li><a href="index.html">Registre-se</a></li></div>
+                    <div id="login">Log in</div>
                 </div>
             </nav>
         </>
