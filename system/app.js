@@ -2,10 +2,10 @@
   const database = require("../database/db")
 
   const User = require("./models/userModel")
-  const Crianca = require("./models/criancaModel")
+  //const Crianca = require("./models/criancaModel")
 
   await database
-    .sync() //{force:true}
+    .sync() //{ force: true }
     .then((result) => {
       console.log("Banco Sincronizado!");
     })
@@ -34,11 +34,11 @@ const userRoutes = require('./routes/userRoute');
 app.use('/api', userRoutes);
 
 
-app.use(express.static(path.join(__dirname, '../layout/build')));
+// app.use(express.static(path.join(__dirname, '../layout/build')));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../layout/build', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../layout/build', 'index.html'));
+// });
 
 
 // Porta do servidor
