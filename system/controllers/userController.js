@@ -22,14 +22,14 @@ module.exports = {
     // },
 
     login: async (req, res) => {
-        const { username, password } = req.body;
+        const { email, password } = req.body;
 
-        if (!username || !password) {
+        if (!email || !password) {
             return res.status(400).json({ message: 'Username e senha são obrigatórios.' });
         }
 
         try {
-            const user = await userRepository.findByUsername(username);
+            const user = await userRepository.findByEmail(email);
 
             if (!user || !await user.validatePassword(password)) {
                 return res.status(401).json({ message: 'Credenciais inválidas.' });
@@ -56,22 +56,21 @@ module.exports = {
 
     register: async (req, res) => {
         console.log('Iniciando registro de usuário');
-        const { username, email, password, dataNascimento, nomeResponsavel, telefone, emailResponsavel } = req.body;
+        const { nomeCrianca, email, password, dataNascimentoCrianca, nomeResponsavel, telefone } = req.body;
 
-        if (!username || !email || !password) {
-            return res.status(400).json({ message: 'Username, email e senha são obrigatórios.' });
+        if (!email || !password) {
+            return res.status(400).json({ message: ' email e senha são obrigatórios.' });
         }
 
         try {
             // Criar um novo usuário
             await userRepository.createUser({
-                username,
+                nomeCrianca,
                 email,
                 password,
-                dataNascimento,
+                dataNascimentoCrianca,
                 nomeResponsavel,
-                telefone,
-                emailResponsavel,
+                telefone
             });
             res.status(201).json({ message: 'Usuário registrado com sucesso!' });
         } catch (error) {

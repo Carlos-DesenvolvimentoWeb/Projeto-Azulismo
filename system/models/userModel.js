@@ -10,10 +10,9 @@ const User = db.define('User', {
         allowNull: false,
         primaryKey: true,
     },
-    username: {
+    nomeCrianca: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
     },
     email: {
         type: Sequelize.STRING,
@@ -24,7 +23,7 @@ const User = db.define('User', {
         type: Sequelize.STRING,
         allowNull: false,
     },
-    dataNascimento: {
+    dataNascimentoCrianca: {
         type: Sequelize.DATEONLY,
         allowNull: true,
     },
@@ -33,10 +32,6 @@ const User = db.define('User', {
         allowNull: true,
     },
     telefone: {
-        type: Sequelize.STRING,
-        allowNull: true,
-    },
-    emailResponsavel: {
         type: Sequelize.STRING,
         allowNull: true,
     }
