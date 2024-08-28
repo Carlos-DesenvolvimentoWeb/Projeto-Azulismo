@@ -34,11 +34,11 @@ const userRoutes = require('./routes/userRoute');
 app.use('/api', userRoutes);
 
 
-// app.use(express.static(path.join(__dirname, '../layout/build')));
+app.use(express.static(path.join(__dirname, '../layout/build')));
 
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, '../layout/build', 'index.html'));
-// });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../layout/build', 'index.html'));
+});
 
 
 // Porta do servidor
