@@ -2,10 +2,10 @@
   const database = require("../database/db")
 
   const User = require("./models/userModel")
-  const Crianca = require("./models/criancaModel")
+  //const Crianca = require("./models/criancaModel")
 
   await database
-    .sync() //{force:true}
+    .sync() //{ force: true }
     .then((result) => {
       console.log("Banco Sincronizado!");
     })

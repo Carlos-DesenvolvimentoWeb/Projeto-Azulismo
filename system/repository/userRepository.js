@@ -5,10 +5,9 @@ class UserRepository {
         this.User = UserModel;
     }
 
-    async findByUsername(username) {
+    async findByEmail(email) {
 
-        console.log(username)
-        return await this.User.findOne({ where: { username } });
+        return await this.User.findOne({ where: { email } });
     }
 
     async createUser(userData) {
