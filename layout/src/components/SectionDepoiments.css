@@ -1,39 +1,36 @@
-.dep h2 {
-  text-align: center;
-  margin-block: 30px;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+.depoiments {
+  background-color: #93cae2;
+  padding-top: 20px;
+}
+.depoiments h2 {
+  font-size: 48px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
 }
 
-
- .card-item {
-  color: black;
-  background: #fff;
-  backdrop-filter: blur(30px);
-  user-select: none;
-  border-radius: 20px;
+.slider-container {
+  width: 100vw;
+  background-image: url(../assets/img/bg2.png);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.slider-container .sliders {
+  width: 70vw;
+  display: block;
+}
+.slider-container .sliders div {
+  display: flex;
+  gap: 30px;
+}
+.sliders div article {
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  height: 200px;
-  
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  border-radius: 20px;
 }
-
- .card-item .depoiment {
-  font-size: 1.1rem;
-  color: #000;
-  font-weight: 500;
-}
-
-.dep {
-  /* background-color: #89cff0; */
-  background-image: url(../assets/img/bg.png);
-  padding: 20px;
-  margin-bottom: 50px;
-}
-.cards-depoiment {
-  margin-inline: 10px;
-  max-width: 300px;
-}
-/* .carousel-container {
- 
-} */

@@ -28,8 +28,15 @@
   align-items: center;
   justify-content: flex-end;
 }
-.why .card h1 {
-  font-size: 2rem;
+.why .card img {
+  object-fit: contain;
+}
+.why .card p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.why .card h2 {
+  margin: 0;
 }
 
 .why .card .content {
@@ -45,3 +52,8 @@
 .container .card:hover .content p {
   color: blue;
 }
+/* .bg {
+  width: 100%;
+  background-color: blueviolet;
+  height: 400px;
+} */
