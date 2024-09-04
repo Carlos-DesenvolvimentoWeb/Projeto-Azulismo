@@ -50,8 +50,7 @@ module.exports = {
 
     // Método para logout
     logout: (req, res) => {
-        req.logout();
-        res.redirect('/');
+        res.json({ message: "Você foi desconectado!" })
     },
 
     register: async (req, res) => {
