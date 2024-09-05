@@ -43,15 +43,6 @@ body, html {
     text-align: center;
 }
 
-#login a {
-    text-decoration: none;
-}
-
-#login a:visited {
-    color: inherit;
-    text-decoration: none;
-}
-
 
 #navbar li a {
     text-decoration: none;
@@ -117,4 +108,3 @@ body, html {
 .dropdown.clicked {
     fill: #4682B4;
 }
-
