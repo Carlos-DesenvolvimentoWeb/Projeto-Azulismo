@@ -47,13 +47,13 @@ function Navbar() {
                                 )}
                             </a>
                         </li>
-                        <li><a href="#">Como usar</a></li>
+                        <li><a href="index.html">Como usar</a></li>
                         <li><a href="index.html">Sobre o Projeto</a></li>
                     </ul>
                 </div>
                 <div className="logar">
-                    <div id="registre"><li><a href="../Cadastro">Registre-se</a></li></div>
-                    <div id="login"><a href="../Login">Log in</a></div>
+                    <div id="registre"><li><a href="index.html">Registre-se</a></li></div>
+                    <div id="login">Log in</div>
                 </div>
             </nav>
         </>

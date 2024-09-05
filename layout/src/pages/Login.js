@@ -1,43 +1,33 @@
 import React from 'react';
 import "./Login.css";
-import AzulismoLogo from '../images/AzulismoLogo.png';
-import Esquerda from '../images/Esquerda.png';
-import Direita from '../images/Direita.png';
 
-const Login = () => {
+function Login() {
   return (
-    <div className="container-do-login">
-      <img 
-        src={Esquerda} 
-        alt="Quebra-cabeças da esquerda" 
-        id="esquerda" 
-      />
-
-      <img 
-        src={AzulismoLogo} 
-        alt="Logo Azulismo" 
-        id="logo" 
-      />
-
-      <div className="log-container">
-
-      <input type="text" placeholder="LOGIN" className="input-box" />
-      <input type="password" placeholder="SENHA" className="input-box" />
-
-      <a href="#" className="forgot-password">Esqueceu a senha?</a>
-
-      <button className="btn entrar">Entrar</button>
-      <button className="btn google">Entrar com Google</button>
-      <button className="btn facebook">Entrar com Facebook</button>
-
-      <a href="../Cadastro" className="signup-link">Não possui cadastro? Cadastre-se aqui</a>
+    <div className="login-container">
+      <div className="puzzle-background">
+        <div className="puzzle"></div>
+        <div className="puzzle"></div>
+        <div className="puzzle"></div>
+        <div className="puzzle"></div>
+        <div className="puzzle"></div>
+        <div className="puzzle"></div>
       </div>
-
-      <img 
-        src={Direita} 
-        alt="Quebra-cabeças da direita" 
-        id="direita" 
-      />
+      <div className="login-box">
+        <h1 className="logo">Azulismo</h1>
+        <form>
+          <input type="text" placeholder="Login" />
+          <input type="password" placeholder="Senha" />
+          <a href="/" className="forgot-password">
+            Esqueceu a senha?
+          </a>
+          <button type="submit">Entrar</button>
+          <button className="google-button">Entrar com Google</button>
+          <button className="facebook-button">Entrar com Facebook</button>
+        </form>
+        <a href="/" className="sign-up">
+          Não possui cadastro? Cadastre-se aqui
+        </a>
+      </div>
     </div>
   );
 }
