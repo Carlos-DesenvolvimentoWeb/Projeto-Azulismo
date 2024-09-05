@@ -1,0 +1,162 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Fundo da página branco */
+}
+
+main {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: white; /* Fundo branco para o contêiner principal */
+}
+
+.how-to-use {
+    margin-left: 130px;
+}
+
+.how-to-use h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+    color: #333;
+}
+
+.how-to-use p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.steps-list {
+    
+    list-style: none;
+    padding: 0;
+    counter-reset: step-counter;
+}
+
+.steps-list li {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 25px;
+    font-size: 1.2em;
+    padding-left: 45px;
+    position: relative;
+    font-weight: bold;
+}
+
+.steps-list li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #FF6D00;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-left {
+    position: absolute;
+    top: 250px; /* Ajuste conforme necessário */
+    left: 0;
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+.image-right {
+    position: absolute;
+    top: 235px;
+    right: 200px;
+    width: 180px;
+    height: auto;
+}
+
+.faq {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 40px;
+}
+
+.faq-title-box h2 {
+    text-align: left;
+    transform: translate(-546px, 440px);
+}
+
+.faq-title-box {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%; /* Ajuste da largura para caber no layout */
+}
+
+.faq-items-box {
+    
+    background-color: white; /* Fundo branco para a caixa dos itens */
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%; /* Ajuste da largura para caber no layout */
+}
+
+.faq-title-box h2 {
+    
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    word-break: break-all;
+}
+
+.image-arrow {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 150px auto 20px 130px; /* Ajuste o valor negativo conforme necessário */
+}
+
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item-box {
+    background-color: white; 
+    padding: 15px;
+    border-radius: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-toggle {
+    font-size: 1.5em;
+    background-color: #31BEA5; /* Cor verde clara */
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.faq-answer {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+}
+
