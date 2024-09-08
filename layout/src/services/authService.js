@@ -1,8 +1,12 @@
-import axios from 'axios';
+import api from '../services/api'
 
 const login = async (email, password) => {
+
     try {
-        const response = await axios.post('/api/login', { email, password });
+
+        const response = await api.post('/api/login', { email, password });
+
+        console.log(response)
         if (response.data.token) {
             localStorage.setItem('token', response.data.token);
             localStorage.setItem('user', JSON.stringify(response.data.user));
@@ -20,4 +24,5 @@ const logout = () => {
     // Optionally, redirect to the login page or home
 };
 
-export default { login, logout };
+const authService = { login, logout };
+export default authService;

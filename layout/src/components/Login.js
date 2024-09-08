@@ -1,16 +1,20 @@
 import React, { useState } from 'react';
 import authService from '../services/authService'
+import { useNavigate } from 'react-router-dom';
+
 
 const LoginComponent = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const navigate = useNavigate();
 
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const data = await authService.login(email, password);
-            // Redirecionamento
+            console.log(email, password);
+            await authService.login(email, password);
+            navigate('/Dashboard')
         } catch (err) {
             setError('Falha no login!');
         }
@@ -19,7 +23,7 @@ const LoginComponent = () => {
     return (
         <form onSubmit={handleLogin}>
             <input
-                type="email"
+                type="text"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
