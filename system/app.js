@@ -19,6 +19,13 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const app = express();
+const cors = require('cors');
+
+app.use(cors({
+  origin: 'http://localhost:3000',  // Permite solicitações da origem do frontend
+  methods: 'GET,POST,PUT,DELETE',   // Métodos HTTP permitidos
+  allowedHeaders: 'Content-Type,Authorization'  // Cabeçalhos permitidos
+}));
 
 const passport = require("./config/passport") //n
 const sequelize = require("../database/db")

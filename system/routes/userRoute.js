@@ -12,7 +12,7 @@ router.post('/register', userController.register);
 router.post('/login', userController.login);
 
 // Rota para logout
-router.get('/logout', userController.logout);
+router.post('/logout', userController.logout);
 
 // Rota para autenticação via Google
 router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));

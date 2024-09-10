@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import Login from './pages/Login';
+import LoginComponent from './components/Login';
 import Dashboard from './pages/Dashboard';
 import Cadastro from './pages/Cadastro';
 import './App.css';
@@ -11,7 +11,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<LoginComponent />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
