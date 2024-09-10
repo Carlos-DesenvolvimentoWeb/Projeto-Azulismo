@@ -53,7 +53,7 @@ function Navbar() {
                     </ul>
                 </div>
                 <div className="logar">
-                    <div id="registre"><li><a href="index.html">Registre-se</a></li></div>
+                    <div id="registre"><li><a href="cadastro">Registre-se</a></li></div>
                     <div id="login">
                         <Link to="/login">Log in</Link>
                     </div>
