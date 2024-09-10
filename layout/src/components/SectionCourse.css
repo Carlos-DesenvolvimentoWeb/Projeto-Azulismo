@@ -1,0 +1,55 @@
+.focos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.focos h2 {
+  font-size: 2.3rem;
+}
+.focos span {
+  margin-bottom: 2.3rem;
+  color: #1f1c14b2;
+}
+.focos button {
+  padding: 1.3rem 4.2rem;
+  background-color: #016afa;
+  border-radius: 1rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  border: none;
+  font-size: 1.1rem;
+}
+.icones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.8rem;
+}
+.icones > * {
+  display: flex;
+  margin-left: 1rem;
+  background-color: white;
+  align-items: center;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.7rem 5rem 0.7rem 1rem;
+}
+.icones img {
+  width: 4rem;
+  height: 4rem;
+}
+.icones p {
+  font-size: 0.9rem;
+  margin-left: 0.7rem;
+}
+.icones-div {
+  background-color: #00c9a7;
+  padding: 1rem;
+  border-radius: 1.1rem;
+}
+.icones-div img {
+  height: 2rem;
+  width: 2rem;
+}
