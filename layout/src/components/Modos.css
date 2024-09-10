@@ -2,7 +2,7 @@
   background-color: #F0F0F0;
   font-family: 'Nunito', sans-serif;
   color: #0A033C;
-  padding: 15px 0 25px 0;
+  padding: 0px 0 100px 0;
 }
 
 
@@ -48,7 +48,7 @@
 }
 
 #video.quadrado::before {
-  background-color: #4682B4; 
+  background-color: #FF3E41; 
 }
 
 #literatura.quadrado::before {
@@ -56,10 +56,10 @@
 }
 
 #games.quadrado::before {
-  background-color: #89CFF0; 
+  background-color: #FF8A43; 
 }
 
 #exercicios.quadrado::before {
-  background-color: #2F4F4F; 
+  background-color: #016AFA; 
 }
   

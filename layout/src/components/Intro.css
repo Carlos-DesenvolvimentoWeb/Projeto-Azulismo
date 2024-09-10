@@ -1,24 +1,24 @@
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #F0F0F0;
 }
-
-header {
+.intro {
+    height: 100vh;
+}
+/* header {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
-}
+} */
 
 .intro-section {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #F0F0F0;
-    padding: 50px 20px;
-    padding-left: 120px;
-    padding-right: 120px;
 }
 
 .text-container {
@@ -28,31 +28,47 @@ header {
 }
 
 .title {
-    font-size: 48px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    margin: 70px 0 20px 70px;
 }
 
 .paragraph {
-    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
     font-weight: 400;
-    margin: 0 0 20px 0;
+    margin: 0 100px 20px 70px;
     padding-top: 15px;
     padding-bottom: 20px;
 }
 
 .buttonIntro1 {
+    font-family: 'Nunito', sans-serif;
     background-color: #89CFF0;
     color: #1F1C14;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
     border: none;
     padding: 20px 35px;
     cursor: pointer;
     border-radius: 16px;
+    width: 273px;
+    height: 70px;
+    margin: 0 0 20px 70px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
-.image-container {
-    width: 35%;
-    height: 300px;
-    background-color: #ddd;
+.buttonIntro1:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.puzzle {
+    position: absolute;
+    top: 150px; 
+    right: 90px; 
+    width: 300px; 
+    height: auto;
 }
