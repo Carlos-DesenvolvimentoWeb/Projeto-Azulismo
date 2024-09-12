@@ -8,6 +8,7 @@ import Modos from '../components/Modos';
 import SectionCards from '../components/SectionCards';
 import SectionDepoiments from '../components/SectionDepoiments';
 import { SectionResults } from '../components/SectionResults';
+import SectionCourse from '../components/SectionCourse';
 
 
 function HomePage() {
@@ -21,6 +22,7 @@ function HomePage() {
        <CourseSection title="Orientação Objeto" /> */}
        <SectionResults />
        <SectionCards />
+       <SectionCourse/>
        <SectionDepoiments />
        <Footer />
      </div>
