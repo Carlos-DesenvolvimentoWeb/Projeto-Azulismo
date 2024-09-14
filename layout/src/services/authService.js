@@ -1,4 +1,7 @@
 import api from '../services/api'
+import { useLocation } from 'react-router-dom';
+import { useEffect } from "react";
+import { jwtDecode } from "jwt-decode";
 
 const login = async (email, password) => {
 
@@ -18,10 +21,11 @@ const login = async (email, password) => {
     }
 };
 
+
 const logout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
-    // Optionally, redirect to the login page or home
+    window.location.href = 'http://localhost:3000';
 };
 
 const authService = { login, logout };
