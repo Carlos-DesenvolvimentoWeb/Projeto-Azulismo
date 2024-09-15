@@ -20,6 +20,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const cors = require('cors');
+const passport = require("./config/passport") //n
 
 app.use(cors({
   origin: 'http://localhost:3000',  // Permite solicitações da origem do frontend
@@ -27,9 +28,6 @@ app.use(cors({
   allowedHeaders: 'Content-Type,Authorization'  // Cabeçalhos permitidos
 }));
 
-const passport = require("./config/passport") //n
-const sequelize = require("../database/db")
-const User = require("./models/userModel")
 
 const NODE_ENV = process.env.NODE_ENV || 'development';
 // Configurações e middlewares aqui

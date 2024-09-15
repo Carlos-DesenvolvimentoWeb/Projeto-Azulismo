@@ -18,8 +18,12 @@ router.post('/logout', userController.logout);
 router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
 
 router.get('/auth/google/callback', passport.authenticate('google', { session: false }), (req, res) => {
-    const token = req.user.token;
-    res.json({ token });
+    if (req.user) {
+        const token = req.user.token;
+        res.redirect(`http://localhost:3000/dashboard?token=${token}`);
+    } else {
+        res.status(401).json({ message: 'Autenticação falhou' });
+    }
 });
 
 // Rota para autenticação via Facebook
