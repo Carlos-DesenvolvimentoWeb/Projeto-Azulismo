@@ -1,7 +1,24 @@
 import api from '../services/api'
-import { useLocation } from 'react-router-dom';
-import { useEffect } from "react";
-import { jwtDecode } from "jwt-decode";
+
+const cadastrar = async (nomeResponsavel, telefone, emailResponsavel, nomeUsuario, dataNascimento, password) => {
+    try {
+        const response = await api.post('/api/register', {
+            nomeResponsavel: nomeResponsavel,
+            nomeCrianca: nomeUsuario,
+            email: emailResponsavel,
+            telefone: telefone,
+            password: password,
+            dataNascimentoCrianca: dataNascimento
+        });
+
+        return response.data.user;
+        //Após o cadastro bem sucedido, o usuário é logado e redirecionado para o /dashboard
+
+    } catch (error) {
+        console.error('Cadastro falhou:', error);
+        throw error;
+    }
+}
 
 const login = async (email, password) => {
 
@@ -28,5 +45,5 @@ const logout = () => {
     window.location.href = 'http://localhost:3000';
 };
 
-const authService = { login, logout };
+const authService = { cadastrar, login, logout };
 export default authService;

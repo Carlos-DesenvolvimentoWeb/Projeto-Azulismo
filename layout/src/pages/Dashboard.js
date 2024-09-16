@@ -7,10 +7,10 @@ import Callback from "../components/Callback"
 function Dashboard() {
   return (
     <div>
+      <Callback />
       <Navbar />
       <FilterBar />
       <h1>Dashboard</h1>
-      <Callback />
       <Footer />
     </div>
   );
