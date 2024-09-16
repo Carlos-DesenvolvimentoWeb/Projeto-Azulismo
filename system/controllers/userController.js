@@ -63,7 +63,7 @@ module.exports = {
 
         try {
             // Criar um novo usuário
-            await userRepository.createUser({
+            const newUser = await userRepository.createUser({
                 nomeCrianca,
                 email,
                 password,
@@ -71,11 +71,16 @@ module.exports = {
                 nomeResponsavel,
                 telefone
             });
-            res.status(201).json({ message: 'Usuário registrado com sucesso!' });
+
+            return res.status(201).json({
+                message: 'Usuário registrado com sucesso!',
+                user: newUser.dataValues
+            });
+
         } catch (error) {
             console.error('Erro ao registrar usuário:', error);
             res.status(500).json({ message: 'Erro ao registrar usuário.' });
         }
-    },
+    }
 
 };

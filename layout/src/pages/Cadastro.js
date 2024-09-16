@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import "./Cadastro.css";
 import AzulismoLogo from '../images/AzulismoLogo.png';
+import authService from '../services/authService'
+import { useNavigate } from 'react-router-dom';
 
 function Cadastro() {
+
+  const navigate = useNavigate();
   // Estados para armazenar os valores dos campos
   const [nomeResponsavel, setNomeResponsavel] = useState('');
   const [telefone, setTelefone] = useState('');
@@ -10,7 +14,7 @@ function Cadastro() {
   const [confirmaEmail, setConfirmaEmail] = useState('');
   const [nomeUsuario, setNomeUsuario] = useState('');
   const [dataNascimento, setDataNascimento] = useState('');
-  const [senha, setSenha] = useState('');
+  const [password, setPassword] = useState('');
   const [confirmaSenha, setConfirmaSenha] = useState('');
 
   // Funções de validação
@@ -43,13 +47,13 @@ function Cadastro() {
   }
 
   // Função para lidar com o clique no botão de cadastro
-  function handleCadastrar() {
+  async function handleCadastrar() {
     if (!validateEmail(emailResponsavel, confirmaEmail)) {
       alert('Os e-mails não correspondem.');
       return;
     }
 
-    if (!validatePassword(senha, confirmaSenha)) {
+    if (!validatePassword(password, confirmaSenha)) {
       alert('As senhas não correspondem ou não atendem aos critérios de segurança.');
       return;
     }
@@ -74,24 +78,39 @@ function Cadastro() {
       return;
     }
 
+    try {
+      const novoUsuario = await authService.cadastrar(nomeResponsavel, telefone, emailResponsavel, nomeUsuario, dataNascimento, password);
+
+      try {
+        await authService.login(novoUsuario.email, password);
+        navigate('/Dashboard')
+
+      } catch (err) {
+        alert("Login Falhou")
+      }
+
+    } catch (err) {
+      console.log('Falha no login!');
+    }
+
     // Salvar dados e redirecionar
-    const formData = {
-      nomeResponsavel,
-      telefone,
-      emailResponsavel,
-      nomeUsuario,
-      dataNascimento,
-      senha
-    };
+    // const formData = {
+    //   nomeResponsavel,
+    //   telefone,
+    //   emailResponsavel,
+    //   nomeUsuario,
+    //   dataNascimento,
+    //   password
+    // };
 
-    localStorage.setItem('formData', JSON.stringify(formData));
+    //localStorage.setItem('formData', JSON.stringify(formData));
+    //window.location.href = 'dados.html';
 
-    window.location.href = 'dados.html';
   }
 
   return (
     <div>
-  
+
 
       <div className="principal">
 
@@ -105,7 +124,7 @@ function Cadastro() {
           <div className="box azul">
             <h3>Dados do Responsável</h3>
             <form>
-          
+
               <input type="text" id="nomeResponsavel" name="nomeResponsavel" placeholder="Nome do Responsável" required value={nomeResponsavel} onChange={e => setNomeResponsavel(e.target.value)} />
 
               <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required value={telefone} onChange={e => setTelefone(e.target.value)} />
@@ -119,15 +138,15 @@ function Cadastro() {
           <div className="box branco">
             <h3>Dados do Usuário (Criança)</h3>
             <form>
-              
+
               <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Nome do Usuário" required value={nomeUsuario} onChange={e => setNomeUsuario(e.target.value)} />
 
               <input type="date" id="dataNascimento" name="dataNascimento" required value={dataNascimento} onChange={e => setDataNascimento(e.target.value)} />
 
-              
-              <input type="password" id="senha" name="senha" placeholder="Senha" required value={senha} onChange={e => setSenha(e.target.value)} />
 
-              
+              <input type="password" id="senha" name="password" placeholder="Senha" required value={password} onChange={e => setPassword(e.target.value)} />
+
+
               <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Confirmação de Senha" required value={confirmaSenha} onChange={e => setConfirmaSenha(e.target.value)} />
 
               <button type="button" onClick={handleCadastrar}>Cadastrar</button>
