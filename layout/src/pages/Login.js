@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
 import "./Login.css";
 import AzulismoLogo from '../images/AzulismoLogo.png';
+import BackIcon from '../images/Icon_voltar.svg';
 import authService from '../services/authService'
 import { useNavigate } from 'react-router-dom';
+import HomePage from './HomePage';
 
 const Login = () => {
 
@@ -32,6 +34,14 @@ const Login = () => {
   return (
     <div className="container-do-login">
 
+      <a href= "/">
+        <img
+        src={BackIcon}
+        alt="Voltar"
+        className="back-icon"
+   
+      /></a>
+      
       <img
         src={AzulismoLogo}
         alt="Logo Azulismo"

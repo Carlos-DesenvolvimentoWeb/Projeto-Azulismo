@@ -11,6 +11,15 @@
     top: 10px; 
 }
 
+.back-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px; 
+    height: 100px; 
+    cursor: pointer;
+}
+
 h2 {
     position: absolute;
     font-family: 'Nunito', sans-serif;

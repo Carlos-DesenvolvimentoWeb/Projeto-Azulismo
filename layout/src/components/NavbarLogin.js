@@ -29,7 +29,7 @@ function NavbarLogin() {
 
                 <div className="icons-right">
                    
-                    <img src={HomeIcon} alt="Home" className="nav-icon" />
+                    <a href="/dashboard"><img src={HomeIcon} alt="Home" className="nav-icon" /></a>
                     <img src={NotificationIcon} alt="Notificações" className="nav-icon" />
                     
                    

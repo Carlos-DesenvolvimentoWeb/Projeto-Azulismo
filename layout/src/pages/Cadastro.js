@@ -3,6 +3,7 @@ import "./Cadastro.css";
 import AzulismoLogo from '../images/AzulismoLogo.png';
 import authService from '../services/authService'
 import { useNavigate } from 'react-router-dom';
+import BackIcon from '../images/Icon_voltar.svg';
 
 function Cadastro() {
 
@@ -109,54 +110,55 @@ function Cadastro() {
   }
 
   return (
-    <div>
+    <div className="container-cadastro">
+      <a href="/">
+        <img
+          src={BackIcon}
+          alt="Voltar"
+          className="back-icon"
+        />
+      </a>
 
-
-      <div className="principal">
-
-        <div className="logo-container">
-          <img src={AzulismoLogo} alt="LOGO AZULISMO" className="logo" />
-        </div>
-
-        <h2>Realize o cadastro e comece a aprender!</h2>
-
-        <div className="form-container">
-          <div className="box azul">
-            <h3>Dados do Responsável</h3>
-            <form>
-
-              <input type="text" id="nomeResponsavel" name="nomeResponsavel" placeholder="Nome do Responsável" required value={nomeResponsavel} onChange={e => setNomeResponsavel(e.target.value)} />
-
-              <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required value={telefone} onChange={e => setTelefone(e.target.value)} />
-
-              <input type="email" id="emailResponsavel" name="emailResponsavel" placeholder="Email do Responsável" required value={emailResponsavel} onChange={e => setEmailResponsavel(e.target.value)} />
-
-              <input type="email" id="confirmaEmail" name="confirmaEmail" placeholder="Confirmação de Email" required value={confirmaEmail} onChange={e => setConfirmaEmail(e.target.value)} />
-            </form>
-          </div>
-
-          <div className="box branco">
-            <h3>Dados do Usuário (Criança)</h3>
-            <form>
-
-              <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Nome do Usuário" required value={nomeUsuario} onChange={e => setNomeUsuario(e.target.value)} />
-
-              <input type="date" id="dataNascimento" name="dataNascimento" required value={dataNascimento} onChange={e => setDataNascimento(e.target.value)} />
-
-
-              <input type="password" id="senha" name="password" placeholder="Senha" required value={password} onChange={e => setPassword(e.target.value)} />
-
-
-              <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Confirmação de Senha" required value={confirmaSenha} onChange={e => setConfirmaSenha(e.target.value)} />
-
-              <button type="button" onClick={handleCadastrar}>Cadastrar</button>
-            </form>
-          </div>
-        </div>
+      <div className="logo-container">
+        <img src={AzulismoLogo} alt="LOGO AZULISMO" className="logo" />
       </div>
 
+      <h2>Realize o cadastro e comece a aprender!</h2>
+
+      <div className="form-container">
+        <div className="box azul">
+          <h3>Dados do Responsável</h3>
+          <form>
+
+            <input type="text" id="nomeResponsavel" name="nomeResponsavel" placeholder="Nome do Responsável" required value={nomeResponsavel} onChange={e => setNomeResponsavel(e.target.value)} />
+
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required value={telefone} onChange={e => setTelefone(e.target.value)} />
+
+            <input type="email" id="emailResponsavel" name="emailResponsavel" placeholder="Email do Responsável" required value={emailResponsavel} onChange={e => setEmailResponsavel(e.target.value)} />
+
+            <input type="email" id="confirmaEmail" name="confirmaEmail" placeholder="Confirmação de Email" required value={confirmaEmail} onChange={e => setConfirmaEmail(e.target.value)} />
+          </form>
+        </div>
+
+        <div className="box branco">
+          <h3>Dados do Usuário (Criança)</h3>
+          <form>
+
+            <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Nome do Usuário" required value={nomeUsuario} onChange={e => setNomeUsuario(e.target.value)} />
+
+            <input type="date" id="dataNascimento" name="dataNascimento" required value={dataNascimento} onChange={e => setDataNascimento(e.target.value)} />
+
+            <input type="password" id="senha" name="password" placeholder="Senha" required value={password} onChange={e => setPassword(e.target.value)} />
+
+            <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Confirmação de Senha" required value={confirmaSenha} onChange={e => setConfirmaSenha(e.target.value)} />
+
+            <button type="button" onClick={handleCadastrar}>Cadastrar</button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }
+
 
 export default Cadastro;
