@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import NavbarLogin from '../components/NavbarLogin';
 import FilterBar from '../components/FilterBar';
 import Footer from '../components/Footer';
 import Callback from "../components/Callback"
@@ -8,7 +8,7 @@ function Dashboard() {
   return (
     <div>
       <Callback />
-      <Navbar />
+      <NavbarLogin />
       <FilterBar />
       <h1>Dashboard</h1>
       <Footer />
