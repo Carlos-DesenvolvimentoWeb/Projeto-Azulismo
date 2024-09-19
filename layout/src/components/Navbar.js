@@ -47,9 +47,6 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a href="../Dashboard">Cursos</a>
-            </li>
-            <li>
               <a href="../ComoUsar">Como usar</a>
             </li>
             <li>
