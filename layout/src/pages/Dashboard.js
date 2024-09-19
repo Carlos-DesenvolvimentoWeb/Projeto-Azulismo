@@ -1,8 +1,9 @@
-import React from 'react';
-import NavbarLogin from '../components/NavbarLogin';
-import FilterBar from '../components/FilterBar';
-import Footer from '../components/Footer';
-import Callback from "../components/Callback"
+import React from "react";
+import NavbarLogin from "../components/NavbarLogin";
+import FilterBar from "../components/FilterBar";
+import Callback from "../components/Callback";
+import Ccards from "../components/Ccards";
+import FooterCcards from "../components/FooterCcards";
 
 function Dashboard() {
   return (
@@ -10,8 +11,8 @@ function Dashboard() {
       <Callback />
       <NavbarLogin />
       <FilterBar />
-      <h1>Dashboard</h1>
-      <Footer />
+      <Ccards />
+      <FooterCcards />
     </div>
   );
 }
