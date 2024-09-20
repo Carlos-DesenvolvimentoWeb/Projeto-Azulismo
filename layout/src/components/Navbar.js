@@ -46,6 +46,7 @@ function Navbar() {
                 )}
               </a>
             </li>
+
             <li>
               <a href="../ComoUsar">Como usar</a>
             </li>
