@@ -18,6 +18,7 @@ const Login = () => {
       await authService.login(inputEmail.current.value, inputPassword.current.value);
       navigate('/Dashboard')
     } catch (err) {
+      alert("Usuário ou senha incorretos!");
       console.log('Falha no login!');
     }
   };
