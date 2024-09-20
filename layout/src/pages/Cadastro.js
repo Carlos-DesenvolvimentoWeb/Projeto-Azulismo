@@ -23,10 +23,10 @@ function Cadastro() {
     return email1 === email2;
   }
 
-  function validatePassword(password1, password2) {
-    const passwordRegex = /^(?=.*[A-Z])(?=.*[\W_]).{1,6}$/;
-    return password1 === password2 && passwordRegex.test(password1);
-  }
+  // function validatePassword(password1, password2) {
+  //   const passwordRegex = /^(?=.*[A-Z])(?=.*[\W_]).{1,6}$/;
+  //   return password1 === password2 && passwordRegex.test(password1);
+  // }
 
   function validatePhoneNumber(phone) {
     return phone.startsWith('819') && phone.length >= 10;
@@ -54,10 +54,10 @@ function Cadastro() {
       return;
     }
 
-    if (!validatePassword(password, confirmaSenha)) {
-      alert('As senhas não correspondem ou não atendem aos critérios de segurança.');
-      return;
-    }
+    // if (!validatePassword(password, confirmaSenha)) {
+    //   alert('As senhas não correspondem ou não atendem aos critérios de segurança.');
+    //   return;
+    // }
 
     if (!validatePhoneNumber(telefone)) {
       alert('O número de telefone deve iniciar com 819 e ter pelo menos 10 dígitos.');
@@ -81,17 +81,11 @@ function Cadastro() {
 
     try {
       const novoUsuario = await authService.cadastrar(nomeResponsavel, telefone, emailResponsavel, nomeUsuario, dataNascimento, password);
-
-      try {
-        await authService.login(novoUsuario.email, password);
-        navigate('/Dashboard')
-
-      } catch (err) {
-        alert("Login Falhou")
-      }
+      alert("Cadastro realizado com sucesso!");
+      navigate('/login');
 
     } catch (err) {
-      console.log('Falha no login!');
+      console.log('Falha no cadastro!');
     }
 
     // Salvar dados e redirecionar
