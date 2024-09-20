@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import LogoAlternativa from "../images/LogoAlternativa.png";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isClicked, setIsClicked] = useState(false);
@@ -14,7 +15,7 @@ function Navbar() {
       <nav>
         <h1>
           <div class="header-image">
-            <img src={LogoAlternativa} alt="Azulismo" />
+          <Link to="/"><img src={LogoAlternativa} alt="Azulismo" /></Link>
           </div>
         </h1>
         <div>
@@ -22,7 +23,7 @@ function Navbar() {
             <li>
               <a
                 id="cursos"
-                href="#"
+                href="../Dashboard"
                 onClick={handleCursosClick}
                 className={isClicked ? "clicked" : ""}
               >

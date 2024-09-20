@@ -5,7 +5,9 @@ import HomeIcon from "../images/Icon_home.svg";
 import NotificationIcon from "../images/Icon_notification.svg";
 import MoreIcon from "../images/Icon_more.svg";
 import UserIcon from "../images/Icon_user.svg";
-import authService from '../services/authService'
+import authService from '../services/authService';
+import { Link } from 'react-router-dom';
+
 
 function NavbarLogin() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -41,7 +43,7 @@ function NavbarLogin() {
     <>
       <nav>
         <div className="header-image">
-          <img src={LogoAlternativa} alt="Azulismo" />
+        <Link to="/"><img src={LogoAlternativa} alt="Azulismo" /></Link>
         </div>
 
         <div>

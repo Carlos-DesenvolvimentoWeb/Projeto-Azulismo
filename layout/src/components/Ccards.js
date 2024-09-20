@@ -1,4 +1,5 @@
 import "./Ccards.css";
+import ParteInferior from "../images/ParteInferior.png"
 
 function Ccards() {
   return (
@@ -48,7 +49,7 @@ function Ccards() {
           <h4>Lorem ipsum</h4>
           <div class="content">
             <p>
-              dPraesent sollicitudin, libero venenatis condimentum maximus, orci
+              Praesent sollicitudin, libero venenatis condimentum maximus, orci
               ipsum tincidunt orci, vitae aliquet tellus sapien in justo. Duis
               vel enim elit. Morbi quis tempus ipsum, nec porttitor libero.
             </p>
@@ -57,7 +58,7 @@ function Ccards() {
       </div>
 
       <div className="texto">
-        <h3>Orientação objeto</h3>
+        <h3>Orientação Objeto</h3>
         <div className="frase">
           <h5>Ver mais &gt;</h5>
         </div>
@@ -104,6 +105,7 @@ function Ccards() {
           </div>
         </div>
       </div>
+      <img src={ParteInferior}  alt="Quebra-cabeça" className="parte-inferior" />
     </section>
   );
 }
