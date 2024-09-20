@@ -23,7 +23,7 @@ function Navbar() {
                         <li>
                             <a 
                                 id="cursos" 
-                                href="#" 
+                                href="../Dashboard" 
                                 onClick={handleCursosClick}
                                 className={isClicked ? 'clicked' : ''}
                             >
