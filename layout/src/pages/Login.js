@@ -19,7 +19,6 @@ const Login = () => {
       navigate('/Dashboard')
     } catch (err) {
       alert("Usuário ou senha incorretos!");
-      console.log('Falha no login!');
     }
   };
 
@@ -35,14 +34,14 @@ const Login = () => {
   return (
     <div className="container-do-login">
 
-      <a href= "/">
+      <a href="/">
         <img
-        src={BackIcon}
-        alt="Voltar"
-        className="back-icon"
-   
-      /></a>
-      
+          src={BackIcon}
+          alt="Voltar"
+          className="back-icon"
+
+        /></a>
+
       <img
         src={AzulismoLogo}
         alt="Logo Azulismo"
