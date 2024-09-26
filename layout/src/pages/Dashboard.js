@@ -3,7 +3,6 @@ import NavbarLogin from "../components/NavbarLogin";
 import FilterBar from "../components/FilterBar";
 import Callback from "../components/Callback";
 import Ccards from "../components/Ccards";
-// import FooterCcards from "../components/FooterCcards";
 
 function Dashboard() {
   return (
@@ -12,7 +11,6 @@ function Dashboard() {
       <NavbarLogin />
       <FilterBar />
       <Ccards />
-      {/* <FooterCcards /> */}
     </div>
   );
 }
