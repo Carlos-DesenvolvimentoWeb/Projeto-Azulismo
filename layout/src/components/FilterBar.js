@@ -4,7 +4,7 @@ import Lupa from "../images/lupa.svg";
 
 const FilterBar = () => {
   return (
-    <div className="filter-bar">
+    <div className="filtro-bar">
       <div className="filters">
         <button className="filtro-button">Cursos</button>
         <button className="filtro-button" id="tamanho-logica">Lógica de Programação</button>

@@ -1,19 +1,19 @@
-.filter-bar {
+.filtro-bar {
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
   align-items: center;
-  margin: 20px 0;
-  padding: 10px;
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
   border-radius: 8px;
 }
+
 
 .filters {
   margin-top: 30px;
   margin-bottom: 30px; 
 }
 
-.filter-bar input[type="text"] {
+.filtro-bar input[type="text"] {
   background-color: #ffffff; 
   border: 1px solid #ffffff;
   color: #1F1C14;
@@ -32,7 +32,7 @@
   font-size: 15px;
 }
 
-.filter-bar select {
+.filtro-bar select {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;

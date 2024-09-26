@@ -104,6 +104,7 @@ function Cadastro() {
   }
 
   return (
+    <div className="principal">
     <div className="container-cadastro">
       <a href="/">
         <img
@@ -150,6 +151,7 @@ function Cadastro() {
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 }

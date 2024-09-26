@@ -25,7 +25,7 @@ h2 {
     font-family: 'Nunito', sans-serif;
     color: #333;
     margin: 0; 
-    top: 180px; /* Ajuste este valor para colocar o h2 exatamente onde deseja */
+    top: 180px; 
     left: 50%;
     transform: translateX(-50%);
     text-align: center; 
@@ -35,27 +35,27 @@ h3 {
     text-align: center;
 }
 
-/* Estilo do formulário */
+
 .form-container {
     display: flex;
     font-family: 'Nunito', sans-serif;
     justify-content: center;
     align-items: flex-start; 
-    gap: 10px; /* Reduz o espaço entre as caixas */
-    margin-top: 10px; /* Espaço acima da form-container */
+    gap: 10px; 
+    margin-top: 10px;
 }
 
-/* Estilo das caixas de formulário */
+
 .box {
     width: 373px; 
     height: 320px;
     padding: 10px;
     border-radius: 8px;
     box-sizing: border-box; 
-    margin-top: 230px; /* Aumente este valor para mover mais para baixo */
+    margin-top: 230px;
 }
 
-/* Estilo da caixa azul */
+
 .azul {
     background-color: #1068B2; 
     color: white;
@@ -63,17 +63,17 @@ h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Estilo da caixa branca */
+
 .branco {
     text-align: center;
 }
 
 
-/* Estilo dos campos de entrada */
+
 input {
     width: calc(100% - 50px); 
-    padding: 8px; /* Reduz o padding dos campos de entrada */
-    margin-bottom: 14px; /* Reduz o espaço entre os campos de entrada */
+    padding: 8px; 
+    margin-bottom: 14px; 
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box; 
@@ -82,20 +82,20 @@ input {
     
 }
 
-/* Estilo dos placeholders */
+
 input::placeholder {
     color: #000000; 
 }
 
-/* Estilo dos botões */
+
 button {
     font-family: 'Nunito', sans-serif;
     width: calc(100% - 50px); 
     background-color: #1068B2; 
     color: white;
-    padding: 10px 0; /* Reduz a altura do botão */
+    padding: 10px 0; 
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 5px; /* Adiciona um pequeno espaço acima do botão */
+    margin-top: 5px; 
 }

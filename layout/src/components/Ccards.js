@@ -4,9 +4,6 @@ import ParteInferior from "../images/ParteInferior.png"
 function Ccards() {
   return (
     <section class="front">
-      {/* <div>
-        <h3>Front-End</h3> <h2>VER MAIS</h2>
-      </div> */}
       <div className="texto">
         <h3>Front-End</h3>
         <div className="frase">

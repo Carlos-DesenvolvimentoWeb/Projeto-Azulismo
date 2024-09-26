@@ -55,7 +55,7 @@ function NavbarLogin() {
               <a href="../ComoUsar">Como usar</a>
             </li>
             <li>
-              <a href="index.html">Sobre o Projeto</a>
+              <a href="#">Sobre o Projeto</a>
             </li>
           </ul>
         </div>
